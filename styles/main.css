@@ -2,6 +2,12 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 html {
 	background-color: white;
@@ -29,6 +35,8 @@ header {
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 	background-image: linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	display: flex;
+	align-items: center;
 }
 header h2 {
 	font-size: 175%;
@@ -39,16 +47,18 @@ header h3 {
 	font-style: italic;
 }
 header img {
-	float: left;
 	padding: 0 30px;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
+main {
+	display: flex;
+	flex-direction: row-reverse;
+}
 /* the styles for the section */
 section {
 	width: 525px;
-	float: right;
 	padding: 0 20px 20px 20px;
 }
 section h1 {
@@ -97,7 +107,6 @@ article img {
 /* the styles for the aside */
 aside {
 	width: 215px;
-	float: right;
 	padding: 0 0 20px 20px;
 }
 aside h2 {
@@ -116,7 +125,6 @@ aside img {
 /* the styles for the footer */
 footer {
 	background-color: #931420;
-	clear: both;
 
 }
 footer p {
