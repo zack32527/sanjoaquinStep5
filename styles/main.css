@@ -56,6 +56,29 @@ main {
 	display: flex;
 	flex-direction: row-reverse;
 }
+#nav_menu{
+	border-bottom: 3px solid #800000;
+	background-color: #800000;
+}
+#nav_menu ul{
+	list-style-type: none;
+	display: flex;
+}
+#nav_menu li{
+	width: 20%;
+}
+#nav_menu a{
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	background-color: #800000;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+#nav_menu a:hover{
+	color: yellow;
+}
 /* the styles for the section */
 section {
 	width: 525px;
